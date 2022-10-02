@@ -83,7 +83,7 @@ const Scene = () => {
 
 
     //Stations size
-    let stationSize = 0.02;
+    let stationSize = 0.03;
 
 
 
@@ -108,8 +108,8 @@ const Scene = () => {
             0.1,
             1000
         )
-
-            camera.position.z = 6
+           camera.position.z = 6
+            
             scene.add(camera)
 
             //Rendered
@@ -146,45 +146,49 @@ const Scene = () => {
            //Station 1 
             let pointInTheMap1 = new THREE.Mesh(
                 new THREE.SphereBufferGeometry(stationSize,20,20),
-                new THREE.MeshBasicMaterial({color:0xff0000})
+                new THREE.MeshBasicMaterial({color:0xFFF69F})
             )
             pointInTheMap1.position.set(s11Coordinates[0],s11Coordinates[1],s11Coordinates[2])
             scene.add(pointInTheMap1)  
             //Station 2
             let pointInTheMap2 = new THREE.Mesh(
                 new THREE.SphereBufferGeometry(stationSize,20,20),
-                new THREE.MeshBasicMaterial({color:0xff0000})
+                new THREE.MeshBasicMaterial({color:0xF6538A})
             )
             pointInTheMap2.position.set(s12Coordinates[0],s12Coordinates[1],s12Coordinates[2])
             scene.add(pointInTheMap2)
             //Station 3
             let pointInTheMap3 = new THREE.Mesh(
                 new THREE.SphereBufferGeometry(stationSize,20,20),
-                new THREE.MeshBasicMaterial({color:0xff0000})
+                new THREE.MeshBasicMaterial({color:0x05D9E8})
             )
             pointInTheMap3.position.set(s14Coordinates[0],s14Coordinates[1],s14Coordinates[2])
             scene.add(pointInTheMap3)
             //Station 4
             let pointInTheMap4 = new THREE.Mesh(
                 new THREE.SphereBufferGeometry(stationSize,20,20),
-                new THREE.MeshBasicMaterial({color:0xff0000})
+                new THREE.MeshBasicMaterial({color:0x0398B0})
             )
             pointInTheMap4.position.set(s15Coordinates[0],s15Coordinates[1],s15Coordinates[2])
             scene.add(pointInTheMap4)
             //Station 5
             let pointInTheMap5 = new THREE.Mesh(
                 new THREE.SphereBufferGeometry(stationSize,20,20),
-                new THREE.MeshBasicMaterial({color:0xff0000})
+                new THREE.MeshBasicMaterial({color:0x65DC98})
             )
             pointInTheMap5.position.set(s16Coordinates[0],s16Coordinates[1],s16Coordinates[2])
             scene.add(pointInTheMap5)
 
             let zeroPosition = new THREE.Mesh(
-                new THREE.SphereBufferGeometry(stationSize,20,20),
-                new THREE.MeshBasicMaterial({color:0x0000FF})
+                new THREE.SphereBufferGeometry(0.015,20,20),
+                new THREE.MeshBasicMaterial({color:0x8AFBFF})
             )
             zeroPosition.position.set(ceroAbsoluto[0],ceroAbsoluto[1],ceroAbsoluto[2])
             scene.add(zeroPosition)
+            zeroPosition.visible = true;
+            document.getElementById("showStation").addEventListener("click", function(){
+                zeroPosition.visible = !zeroPosition.visible;
+            });
 
             pointInTheMap1.visible = true;
             document.getElementById("showStation").addEventListener("click", function(){

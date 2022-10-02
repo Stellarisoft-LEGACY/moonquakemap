@@ -19,11 +19,13 @@ function App() {
     <div className = "information" id="data">
     <h2>Apollo Missions</h2>
     <ul>
-    <li><div className = "rocket1"><i class="fas fa-rocket"></i></div> Station A11 | 1969 - 1969</li>
-    <li><div className = "rocket2"><i class="fas fa-rocket"></i></div> Station A12 | 1969 - 1977</li>
-    <li><div className = "rocket3"><i class="fas fa-rocket"></i></div> Station A14 | 1971 - 1977</li>
-    <li><div className = "rocket4"><i class="fas fa-rocket"></i></div> Station A15 | 1971 - 1977</li>
-    <li><div className = "rocket5"><i class="fas fa-rocket"></i></div> Station A16 | 1972 - 1977</li>
+    <li><div className = "rocket1"><i class="ri-rocket-2-fill"></i></div> Station A11 | 1969 - 1969</li>
+    <li><div className = "rocket2"><i class="ri-rocket-2-fill"></i></div> Station A12 | 1969 - 1977</li>
+    <li><div className = "rocket3"><i class="ri-rocket-2-fill"></i></div> Station A14 | 1971 - 1977</li>
+    <li><div className = "rocket4"><i class="ri-rocket-2-fill"></i></div> Station A15 | 1971 - 1977</li>
+    <li><div className = "rocket5"><i class="ri-rocket-2-fill"></i></div> Station A16 | 1972 - 1977</li>
+    <li><div className = "origin"><i class="ri-map-pin-2-fill"></i></div> Prime meridian 0°E / 0°S</li>
+
 
 
   

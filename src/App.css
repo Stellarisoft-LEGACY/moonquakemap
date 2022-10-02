@@ -71,23 +71,27 @@
 }
 .rocket1{
   display: inline-block;
-  color:red;
+  color:#FFF69F;
 }
 .rocket2{
   display: inline-block;
-  color:blue;
+  color:#F6538A;
 }
 .rocket3{
   display: inline-block;
-  color:blueviolet;
+  color:#05D9E8;
 }
 .rocket4{
   display: inline-block;
-  color:green;
+  color:#0398B0;
 }
 .rocket5{
   display: inline-block;
-  color:cyan;
+  color:#65DC98;
+}
+.origin{
+  display: inline-block;
+  color:#8AFBFF;
 }
 
 
