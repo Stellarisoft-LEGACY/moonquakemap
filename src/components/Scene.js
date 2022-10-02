@@ -100,6 +100,12 @@ const Scene = () => {
    const mountRef = useRef(null)
     useEffect(() => {
 
+        //fondo
+        const loader = new THREE.TextureLoader();
+        loader.load('https://images.pexels.com/photos/1205301/pexels-photo-1205301.jpeg', function (texture) {
+            scene.background = texture;
+        });
+
         const currentMount = mountRef.current
         //Scene
         const scene = new THREE.Scene()

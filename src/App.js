@@ -13,8 +13,11 @@ function App() {
       <h1>Vibratio13 - A 3D Moonquake map made with Three.js  </h1>
     </div>
     <div className = "button1" id="showMesh">
+      <h1>Lat/Lon</h1>
     </div>
     <div className = "button2" id="showStation">
+      <h1>Stations</h1>
+
     </div>
     <div className = "information" id="data">
     <h2>Apollo Missions</h2>

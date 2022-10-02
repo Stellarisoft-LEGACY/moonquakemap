@@ -22,25 +22,36 @@
 }
 .button1{
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 32px;
   border: solid;
   border-color: aquamarine;
   bottom: 40px;
   right: 40px;
   cursor: pointer;
+  font-size: 10px;
+}
+
+.button1 h1{
+  color: white;
 }
 
 .button2{
   position: absolute;
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 32px;
   border: solid;
   border-color: aquamarine;
   bottom: 40px;
   right: 160px;
   cursor: pointer;
+  margin-top: 10px;
+  font-size: 10px;
 }
+.button2 h1{
+  color: white;
+}
+
 
 
 .information{
