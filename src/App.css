@@ -30,6 +30,7 @@
   right: 40px;
   cursor: pointer;
   font-size: 10px;
+  background-color: #111111;
 }
 
 .button1 h1{
@@ -47,7 +48,9 @@
   cursor: pointer;
   margin-top: 10px;
   font-size: 10px;
+  background-color: #111111;
 }
+
 .button2 h1{
   color: white;
 }
@@ -56,10 +59,14 @@
 
 .information{
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
   left: 12vw;
+  background-color: #111111;
+  border-radius: 2rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 .information h2{
   color: white;
@@ -105,5 +112,152 @@
   color:#8AFBFF;
 }
 
+.moonquakeBox{
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 12vw;
+  background-color: #111111;
+  border-radius: 2rem;
+  padding-right: 6.5rem;
+  padding-left: 6.5rem;
+}
+.moonquake1969{
+  margin-top: 20px;
 
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1970{
+  margin-top: 10px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1971{
+  margin-top: 10px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1972{
+  margin-top: 10px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1973{
+  margin-top: 10px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1974{
+  margin-top: 10px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1975{
+  margin-top: 10px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1976{
+  margin-top: 10px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
+.moonquake1977{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #111111;
+}
 
+.moonquake1969 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1970 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1971 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1972 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1973 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1974 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1975 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1976 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
+.moonquake1977 h1{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+
+}
