@@ -1,38 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.test{
+  padding-top: 120px;
+  position: absolute; 
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.test h1{
+  font-family: 'Nunito', sans-serif;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.button1{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 40px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button2{
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border: solid;
+  border-color: aquamarine;
+  bottom: 40px;
+  right: 160px;
+  cursor: pointer;
 }
+
+
+.information{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  left: 12vw;
+}
+.information h2{
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5vw;
+}
+.information ul{
+  list-style-type: none;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5vw;
+}
+
+
+.logoApp{
+  position: absolute;
+  width: 200px;
+  top: 20px;
+  right: 30px;
+}
+.rocket1{
+  display: inline-block;
+  color:red;
+}
+.rocket2{
+  display: inline-block;
+  color:blue;
+}
+.rocket3{
+  display: inline-block;
+  color:blueviolet;
+}
+.rocket4{
+  display: inline-block;
+  color:green;
+}
+.rocket5{
+  display: inline-block;
+  color:cyan;
+}
+
+
+

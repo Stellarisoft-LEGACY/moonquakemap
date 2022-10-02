@@ -12,7 +12,7 @@ const Scene = () => {
         longitude: 23.473146,
         startTime: '1969-07-21',
         endTime: '1969-08-26'
-    }
+    }      
     
     const station2 =   {
         nameStation: 'S12',
@@ -109,7 +109,7 @@ const Scene = () => {
             1000
         )
 
-            camera.position.z = 5
+            camera.position.z = 6
             scene.add(camera)
 
             //Rendered
@@ -129,19 +129,19 @@ const Scene = () => {
 
             var geometry = new THREE.SphereBufferGeometry( radius, longSegments, latSegments);
             var material = new THREE.MeshBasicMaterial({
-           color: 0x00FF00,
+           color: 0x8afbff,
               wireframe: true
            });
 
            
             var sphere = new THREE.Mesh( geometry, material );
             scene.add( sphere );
+            
+            sphere.visible = true;
+            document.getElementById("showMesh").addEventListener("click", function(){
+                sphere.visible = !sphere.visible;
+            });
              
-            var material2 = new THREE.MeshBasicMaterial({color:0x000000})
-            var geometry2 = new THREE.SphereBufferGeometry(0.99,50,50);
-     
-            var sphere2 = new THREE.Mesh( geometry2, material2 );
-           //scene.add( sphere2 );
 
            //Station 1 
             let pointInTheMap1 = new THREE.Mesh(
@@ -186,9 +186,28 @@ const Scene = () => {
             zeroPosition.position.set(ceroAbsoluto[0],ceroAbsoluto[1],ceroAbsoluto[2])
             scene.add(zeroPosition)
 
+            pointInTheMap1.visible = true;
+            document.getElementById("showStation").addEventListener("click", function(){
+                pointInTheMap1.visible = !pointInTheMap1.visible;
+            });
+            pointInTheMap2.visible = true;
+            document.getElementById("showStation").addEventListener("click", function(){
+                pointInTheMap2.visible = !pointInTheMap2.visible;
+            });
+            pointInTheMap3.visible = true;
+            document.getElementById("showStation").addEventListener("click", function(){
+                pointInTheMap3.visible = !pointInTheMap3.visible;
+            });
+            pointInTheMap4.visible = true;
+            document.getElementById("showStation").addEventListener("click", function(){
+                pointInTheMap4.visible = !pointInTheMap4.visible;
+            });
+            pointInTheMap5.visible = true;
+            document.getElementById("showStation").addEventListener("click", function(){
+                pointInTheMap5.visible = !pointInTheMap5.visible;
+            });
 
-
-
+            
   
 
 
@@ -198,7 +217,7 @@ const Scene = () => {
 
 
 
-            //Loadaer
+            //Moon
             const moon = new THREE.Group()
             const gltfLoader = new GLTFLoader()
             gltfLoader.load('./model/moonv2.glb',
@@ -209,46 +228,39 @@ const Scene = () => {
                 scene.add(moon)  
             },
             ()=>{
-                
             },
             ()=>{
-                
             }
-            
             )
-
-            //Lights
-            
-            const ambientLight = new THREE.AmbientLight(0xffffff, 4)
-            scene.add(ambientLight)
             /*
-            const light1 = new THREE.DirectionalLight(0xffffff, 1)
-            light1.position.set(100,100,100)
-            scene.add(light1)
-
-            const light2 = new THREE.DirectionalLight(0xffffff, 1)
-            light2.position.set(666,666,666)
-            scene.add(light2)
-
-            const light3 = new THREE.DirectionalLight(0xffffff, 1)
-            light2.position.set(666,666,66666)
-            scene.add(light3)
+            //Station1
+            const stationA11= new THREE.Group()
+            const stationA11Loader = new GLTFLoader()
+            stationA11Loader.load('./model/stationA11.glb',
+            (gltf)=>{
+                gltf.scene.scale.set(1,1,1)
+                stationA11.add(gltf.scene)
+               // moon.rotation.y = Math.PI;
+                scene.add(stationA11)  
+            },
+            ()=>{
+            },
+            ()=>{
+            }
+            )
             */
 
 
 
 
-            //Cube
-            const cube = new THREE.Mesh(
-                new THREE.BoxBufferGeometry(1,1,1,),
-                new THREE.MeshBasicMaterial()
-            )
+            //Lights
+            const ambientLight = new THREE.AmbientLight(0xffffff, 4)
+            scene.add(ambientLight)
 
-          //  scene.add(cube)
-            console.log("object")
+
+
 
             //Render the scene
-            
             const animate = () => {
                 renderer.render(scene, camera)
                 requestAnimationFrame(animate)
@@ -265,12 +277,14 @@ const Scene = () => {
 
 
     return (
+
+        
         <div
         className='Contenedor3D'
         ref = {mountRef}
         style= {{width: '100%', height: '100vh'}}
-        >
-        </div>
+        ></div>
+
     )
 }
 
